@@ -62,13 +62,13 @@ const UserInputForm = () => {
         value={email}
         onChange={handleEmailChange}
       />
-      <span className="or">or</span>
+      {/* <span className="or">or</span>
       <input
         type="tel"
         placeholder="Enter your mobile number"
         value={mobileNumber}
         onChange={handleMobileNumberChange}
-      />
+      /> */}
       <input
         type="text"
         placeholder="Enter Upi Id"
