@@ -1,0 +1,36 @@
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  background-color: rgb(30, 29, 29);
+  color: white;
+}
+
+.search_bar > input {
+  width: 300px;
+  height: 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.navlinks {
+  display: flex;
+}
+
+.navlinks > h3 {
+  margin-right: 25px;
+  font-size: 16px;
+}
+
+.home_link {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
