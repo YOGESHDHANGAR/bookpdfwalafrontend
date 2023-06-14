@@ -8,7 +8,7 @@
 }
 
 .search_bar > input {
-  width: 300px;
+  width: 18vmax;
   height: 35px;
   border: none;
   outline: none;
@@ -33,4 +33,19 @@
 .icons {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header_container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .search_bar > input {
+    width: 42vmax;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 0 15px;
+  }
 }

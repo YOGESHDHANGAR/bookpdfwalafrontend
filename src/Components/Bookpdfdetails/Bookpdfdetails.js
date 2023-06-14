@@ -62,13 +62,13 @@ const UserInputForm = () => {
         value={email}
         onChange={handleEmailChange}
       />
-      {/* <span className="or">or</span>
+      <span className="or">or</span>
       <input
         type="tel"
         placeholder="Enter your mobile number"
         value={mobileNumber}
         onChange={handleMobileNumberChange}
-      /> */}
+      />
       <input
         type="text"
         placeholder="Enter Upi Id"
@@ -105,8 +105,7 @@ const Bookpdfdetails = () => {
               Price: ₹{getsinglebookpdf.price}
             </h2>
             <p className="productdetails_description">
-              If you create a folder named "images" and put an image named
-              "mypic.jpg" into it, then you can reference its path like this.
+              {getsinglebookpdf.description.slice(0, 80) + "..."}
             </p>
           </div>
         )}

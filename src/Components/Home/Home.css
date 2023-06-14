@@ -41,3 +41,10 @@
   color: #888888;
   margin-bottom: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -56,7 +56,9 @@ const Home = () => {
               <div className="content">
                 <h2 className="name">{elem.name}</h2>
                 <h2 className="price">Price: ₹{elem.price}</h2>
-                <p className="decription">{elem.description}</p>
+                <p className="decription">
+                  {elem.description.slice(0, 80) + "..."}
+                </p>
               </div>
             </div>
           ))}
