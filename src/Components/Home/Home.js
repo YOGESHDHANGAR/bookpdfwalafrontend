@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Home.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllBookpdfAction } from "../../redux/actions/bookpdfAction";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 
 const Home = () => {
@@ -59,6 +59,7 @@ const Home = () => {
                 <p className="decription">
                   {elem.description.slice(0, 80) + "..."}
                 </p>
+                <Link>Click to download</Link>
               </div>
             </div>
           ))}

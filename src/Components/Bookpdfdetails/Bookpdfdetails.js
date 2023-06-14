@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { getSingleBookpdfAction } from "../../redux/actions/bookpdfAction";
 import qr_image from "./qr_image.jpg";
 import { register } from "../../redux/actions/userAction";
+import Samplepdf from "./Samplepdf";
 
 const UserInputForm = () => {
   const dispatch = useDispatch();
@@ -107,6 +108,7 @@ const Bookpdfdetails = () => {
             <p className="productdetails_description">
               {getsinglebookpdf.description.slice(0, 80) + "..."}
             </p>
+            <Samplepdf sample_pdf_url={getsinglebookpdf.sample_pdf_url} />
           </div>
         )}
       </div>
@@ -117,8 +119,8 @@ const Bookpdfdetails = () => {
         </div>
         <h3 className="note">
           After 10 minutes of your payment, you will receive an email link where
-          you can download the book PDF. Don't forget to enter your email and
-          upi_id.
+          you can download the full version book PDF. Don't forget to enter your
+          email and upi_id.
         </h3>
         <p>You can pay from any payment gateway!</p>
       </div>

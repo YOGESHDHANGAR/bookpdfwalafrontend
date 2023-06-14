@@ -1,0 +1,12 @@
+.sample_pdf_download {
+  display: flex;
+  font-size: 1.2vmax;
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .sample_pdf_download {
+    margin: 10px;
+    font-size: 2.2vmax;
+  }
+}

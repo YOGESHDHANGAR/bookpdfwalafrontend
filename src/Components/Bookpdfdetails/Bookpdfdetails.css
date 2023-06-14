@@ -40,13 +40,13 @@
 }
 
 .productdetails_name {
-  margin: 10px 0;
-  font-size: 20px;
+  margin: 8px 0;
+  font-size: 16px;
   color: #333;
 }
 
 .productdetails_price {
-  margin: 10px 0;
+  margin: 2px 0;
   font-size: 16px;
   color: #555;
 }
